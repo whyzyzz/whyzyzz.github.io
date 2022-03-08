@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="使用Hexo写博客, 晚枫">
-    <meta name="description" content="使用Hexo写博客在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source/_posts下找到。$ hexo new &amp;quot;使用Hexo写博客&amp;quot;
+    <meta name="description" content="使用Hexo写博客在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source&amp;#x2F;_posts下找到。$ hexo new &amp;quot;使用Hexo写博客&amp;quot;
 
-打开方式用VScode，用Shift+Ct">
+打开方式用VScode，用Shi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -468,7 +468,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="使用Hexo写博客"><a href="#使用Hexo写博客" class="headerlink" title="使用Hexo写博客"></a>使用Hexo写博客</h2><h3 id="在自己个人博客的文件夹下右击Git-Bash-Here输入以下命令即可在博客的source-posts下找到。"><a href="#在自己个人博客的文件夹下右击Git-Bash-Here输入以下命令即可在博客的source-posts下找到。" class="headerlink" title="在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source/_posts下找到。"></a>在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source/_posts下找到。</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;使用Hexo写博客&quot;</code></pre>
+                <h2 id="使用Hexo写博客"><a href="#使用Hexo写博客" class="headerlink" title="使用Hexo写博客"></a>使用Hexo写博客</h2><h3 id="在自己个人博客的文件夹下右击Git-Bash-Here输入以下命令即可在博客的source-x2F-posts下找到。"><a href="#在自己个人博客的文件夹下右击Git-Bash-Here输入以下命令即可在博客的source-x2F-posts下找到。" class="headerlink" title="在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source&#x2F;_posts下找到。"></a>在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source&#x2F;_posts下找到。</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;使用Hexo写博客&quot;</code></pre>
 
 <p>打开方式用VScode，用Shift+Ctrl+V打开预览(向右下方拉)，可以边写边看发布的效果。</p>
 <h2 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1. 斜体和粗体"></a>1. 斜体和粗体</h2><pre class="language-bash" data-language="bash"><code class="language-bash">*我的博客*  或  _我的博客_ 
@@ -535,7 +535,29 @@
 |默认左对齐|左对齐|居中对齐|右对齐|
 |默认左对齐|左对齐|居中对齐|右对齐|</code></pre>
 
-<p>效果如下：<br>| 表头1|表头2|表头3|表头4<br>|-| :- | :-: | -: |<br>|默认左对齐|左对齐|居中对齐|右对齐|<br>|默认左对齐|左对齐|居中对齐|右对齐|</p>
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th align="left">表头2</th>
+<th align="center">表头3</th>
+<th align="right">表头4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>默认左对齐</td>
+<td align="left">左对齐</td>
+<td align="center">居中对齐</td>
+<td align="right">右对齐</td>
+</tr>
+<tr>
+<td>默认左对齐</td>
+<td align="left">左对齐</td>
+<td align="center">居中对齐</td>
+<td align="right">右对齐</td>
+</tr>
+</tbody></table>
 <h2 id="写好后-保存-发布远端的命令"><a href="#写好后-保存-发布远端的命令" class="headerlink" title="写好后(保存)发布远端的命令"></a>写好后(保存)发布远端的命令</h2><h3 id="（自己博客文件夹下空白部分右击Git-Bash-Here输入以下命令）"><a href="#（自己博客文件夹下空白部分右击Git-Bash-Here输入以下命令）" class="headerlink" title="（自己博客文件夹下空白部分右击Git Bash Here输入以下命令）"></a>（自己博客文件夹下空白部分右击Git Bash Here输入以下命令）</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo clean  
 $ hexo g
 $ hexo d</code></pre>
