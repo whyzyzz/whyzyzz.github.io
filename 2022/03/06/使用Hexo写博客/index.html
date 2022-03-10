@@ -5,9 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="使用Hexo写博客, 晚枫">
-    <meta name="description" content="使用Hexo写博客在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source&amp;#x2F;_posts下找到。$ hexo new &amp;quot;使用Hexo写博客&amp;quot;
+    <meta name="description" content="使用Hexo写博客在自己根目录的文件夹下右击Git Bash Here输入以下命令即可source&amp;#x2F;_posts下找到。
+$ hexo new &amp;quot;使用Hexo写博客&amp;quot;
 
-打开方式用VScode，用Shi">
+打开方式用VScode，用Shift+C">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -468,7 +469,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="使用Hexo写博客"><a href="#使用Hexo写博客" class="headerlink" title="使用Hexo写博客"></a>使用Hexo写博客</h2><h3 id="在自己个人博客的文件夹下右击Git-Bash-Here输入以下命令即可在博客的source-x2F-posts下找到。"><a href="#在自己个人博客的文件夹下右击Git-Bash-Here输入以下命令即可在博客的source-x2F-posts下找到。" class="headerlink" title="在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source&#x2F;_posts下找到。"></a>在自己个人博客的文件夹下右击Git Bash Here输入以下命令即可在博客的source&#x2F;_posts下找到。</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;使用Hexo写博客&quot;</code></pre>
+                <h2 id="使用Hexo写博客"><a href="#使用Hexo写博客" class="headerlink" title="使用Hexo写博客"></a>使用Hexo写博客</h2><p>在自己根目录的文件夹下右击Git Bash Here输入以下命令即可source&#x2F;_posts下找到。</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;使用Hexo写博客&quot;</code></pre>
 
 <p>打开方式用VScode，用Shift+Ctrl+V打开预览(向右下方拉)，可以边写边看发布的效果。</p>
 <h2 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1. 斜体和粗体"></a>1. 斜体和粗体</h2><pre class="language-bash" data-language="bash"><code class="language-bash">*我的博客*  或  _我的博客_ 
@@ -531,7 +533,7 @@
 <p>效果如下：</p>
 <p><img src="https://p1.ssl.qhimgs1.com/sdr/400__/t0106db4b61693efd8b.jpg"></p>
 <h2 id="6-插入表格"><a href="#6-插入表格" class="headerlink" title="6. 插入表格"></a>6. 插入表格</h2><pre class="language-bash" data-language="bash"><code class="language-bash">| 表头1|表头2|表头3|表头4
-|-| :- | :-: | -: | 
+| --- | --- | --- | ---| 
 |默认左对齐|左对齐|居中对齐|右对齐|
 |默认左对齐|左对齐|居中对齐|右对齐|</code></pre>
 
@@ -558,7 +560,8 @@
 <td align="right">右对齐</td>
 </tr>
 </tbody></table>
-<h2 id="写好后-保存-发布远端的命令"><a href="#写好后-保存-发布远端的命令" class="headerlink" title="写好后(保存)发布远端的命令"></a>写好后(保存)发布远端的命令</h2><h3 id="（自己博客文件夹下空白部分右击Git-Bash-Here输入以下命令）"><a href="#（自己博客文件夹下空白部分右击Git-Bash-Here输入以下命令）" class="headerlink" title="（自己博客文件夹下空白部分右击Git Bash Here输入以下命令）"></a>（自己博客文件夹下空白部分右击Git Bash Here输入以下命令）</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo clean  
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>（根目录文件夹下空白部分右击Git Bash Here输入以下命令）</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo clean  
 $ hexo g
 $ hexo d</code></pre>
 <p>解释如下：</p>
@@ -566,6 +569,19 @@ $ hexo d</code></pre>
 <p>hexo g:(hexo generate)生成静态文件</p>
 <p>hexo s:(hexo server)启动服务器，重设端口，实现预览的效果。</p>
 <p>hexo d:(hexo deploy)部署,用于将网站部署到服务器上。</p>
+<h2 id="解决Hexo-matery主题一键复制代码块问题"><a href="#解决Hexo-matery主题一键复制代码块问题" class="headerlink" title="解决Hexo+matery主题一键复制代码块问题"></a>解决Hexo+matery主题一键复制代码块问题</h2><p>在根目录文件夹下的_config里修改，具体修改如下：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: &#39;&#39;
+  wrap: true
+  hljs: false
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: false
+  tab_replace: &#39;&#39;</code></pre>
 
                 
             </div>
