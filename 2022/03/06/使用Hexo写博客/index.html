@@ -469,10 +469,10 @@ $ hexo new &amp;quot;使用Hexo写博客&amp;quot;
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="使用Hexo写博客"><a href="#使用Hexo写博客" class="headerlink" title="使用Hexo写博客"></a>使用Hexo写博客</h2><p>在自己根目录的文件夹下右击Git Bash Here输入以下命令即可source&#x2F;_posts下找到。</p>
+                <h2 id="使用Hexo写博客"><a href="#使用Hexo写博客" class="headerlink" title="使用Hexo写博客"></a>使用Hexo写博客</h2><p>在自己根目录的文件夹下右击<strong>Git Bash Here</strong>输入以下命令即可<em>source&#x2F;_posts</em>下找到。</p>
 <pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;使用Hexo写博客&quot;</code></pre>
 
-<p>打开方式用VScode，用Shift+Ctrl+V打开预览(向右下方拉)，可以边写边看发布的效果。</p>
+<p>打开方式用<strong>VScode</strong>，用<strong>Shift+Ctrl+V</strong>打开预览(向右下方拉)，可以边写边看发布的效果。</p>
 <h2 id="1-斜体和粗体"><a href="#1-斜体和粗体" class="headerlink" title="1. 斜体和粗体"></a>1. 斜体和粗体</h2><pre class="language-bash" data-language="bash"><code class="language-bash">*我的博客*  或  _我的博客_ 
 
 **我的博客**
@@ -560,16 +560,16 @@ $ hexo new &amp;quot;使用Hexo写博客&amp;quot;
 <td align="right">右对齐</td>
 </tr>
 </tbody></table>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>（根目录文件夹下空白部分右击Git Bash Here输入以下命令）</p>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>（根目录文件夹下空白部分右击<strong>Git Bash Here</strong>输入以下命令）</p>
 <pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo clean  
 $ hexo g
 $ hexo d</code></pre>
 <p>解释如下：</p>
 <p>hexo clean:清除缓存</p>
 <p>hexo g:(hexo generate)生成静态文件</p>
-<p>hexo s:(hexo server)启动服务器，重设端口，实现预览的效果。</p>
+<p>hexo s:(hexo server)启动服务器，重设端口，实现<strong>预览</strong>的效果。</p>
 <p>hexo d:(hexo deploy)部署,用于将网站部署到服务器上。</p>
-<h2 id="解决Hexo-matery主题一键复制代码块问题"><a href="#解决Hexo-matery主题一键复制代码块问题" class="headerlink" title="解决Hexo+matery主题一键复制代码块问题"></a>解决Hexo+matery主题一键复制代码块问题</h2><p>在根目录文件夹下的_config里修改，具体修改如下：</p>
+<h2 id="解决一键复制代码块问题"><a href="#解决一键复制代码块问题" class="headerlink" title="解决一键复制代码块问题"></a>解决一键复制代码块问题</h2><p>在根目录文件夹下_config 里修改，具体修改如下：</p>
 <pre class="language-bash" data-language="bash"><code class="language-bash">highlight:
   enable: false
   line_number: false
@@ -582,6 +582,10 @@ prismjs:
   preprocess: true
   line_number: false
   tab_replace: &#39;&#39;</code></pre>
+
+<p>效果如下：<br><img src="/assets/%E6%95%88%E6%9E%9C%E5%9B%BE.png"></p>
+<h2 id="插入截图的方法："><a href="#插入截图的方法：" class="headerlink" title="插入截图的方法："></a>插入截图的方法：</h2><p>在根目录文件下<em>source_posts\assets</em>(如果没有就新建一个)把截图放入。使用的表示方法如下：</p>
+<pre class="language-none"><code class="language-none">![](assets&#x2F;截图名.格式)</code></pre>
 
                 
             </div>
@@ -817,18 +821,17 @@ prismjs:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/06/%E4%BD%BF%E7%94%A8Hexo%E5%86%99%E5%8D%9A%E5%AE%A2/">
+                <a href="/2022/03/12/%E6%95%B0%E7%BB%84/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="使用Hexo写博客">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="数组">
                         
-                        <span class="card-title">使用Hexo写博客</span>
+                        <span class="card-title">数组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -838,9 +841,9 @@ prismjs:
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-06
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -849,7 +852,6 @@ prismjs:
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
