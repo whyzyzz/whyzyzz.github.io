@@ -4,13 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="我的第一篇博客文章, 晚枫">
-    <meta name="description" content="##第一章
-内容
-##第二章
-内容
-##参考文献
-">
+    <meta name="keywords" content="基础知识, 晚枫">
+    <meta name="description" content="简单的快捷键(1)ALT+&amp;#x2F;           自动补全命令(2)ALT+方向键      移动语句到指定的位置(3)shift+home      定位到该语句的首部   shift+end       定位到该语句的尾部(4">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>我的第一篇博客文章 | 晚枫</title>
+    <title>基础知识 | 晚枫</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -314,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">我的第一篇博客文章</h1>
+                    <h1 class="description center-align post-title">基础知识</h1>
                 </div>
             </div>
         </div>
@@ -447,7 +442,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-05
+                    2022-03-16
                 </div>
                 
 
@@ -471,11 +466,71 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>##第一章</p>
-<p>内容</p>
-<p>##第二章</p>
-<p>内容</p>
-<p>##参考文献</p>
+                <h2 id="简单的快捷键"><a href="#简单的快捷键" class="headerlink" title="简单的快捷键"></a>简单的快捷键</h2><p>(1)ALT+&#x2F;           自动补全命令<br>(2)ALT+方向键      移动语句到指定的位置<br>(3)shift+home      定位到该语句的首部<br>   shift+end       定位到该语句的尾部<br>(4)control+c       复制一条语句<br>(5)control+&#x2F;       单行注释,同时可以删除单行注释<br>(6)control+shift+&#x2F; 多行注释<br>(7)control+shift+f 根据profile格式化编码格式<br>(8)control+shift+\ 删除多行注释<br>(9)control+d       删除光标,删除一行<br>(10)control+z      撤销刚刚的操作<br>(11) F11    执行语句<br>Ctrl+shift + o   自动导入包<br>Ctrl + o     查找当前类的内容</p>
+<h2 id="命名建议"><a href="#命名建议" class="headerlink" title="命名建议"></a>命名建议</h2><p>•1-命名要有意义，最好做到见名知意。<br>int age &#x3D; 20;  String name &#x3D; “jack”;<br>int a &#x3D; 10; String n &#x3D; “rose”;<br>•2-类名，接口名的命名，单词首字母大写。HelloWorld, Student<br>•3-属性名和变量名：如果有一个单词，则该单词全部小写；如果有多个单词，第一个单词全部小写，第二个单词及以后，首字母大写。age, name, totalScore<br>•4-方法名：如果有一个单词，则单词全部小写；如果有多个单词，则第一个单词小写，第二个单词及以后，首字母大写。一般情况下，一个单词的方法，该单词是动词get；两个或多个单词，一般是动宾结构getName。</p>
+<h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>–数值型<br>•定点型:byte short int long<br>•浮点型:float  double<br>•字符型:char</p>
+<p>–逻辑型<br>•boolean</p>
+<p>Java基本数据类型-定点型<br>•定点型：     1111111   10000000<del>00000000   01111111  -128</del>127<br>–byte    1     -27<del>27-1 (-128</del>127)    较常用        0<br>–short    2     -215<del>215-1                        0<br>–int     4     -231</del>231-1            很常用        0<br>–long    8     -263~263-1            较常用        0L</p>
+<p>Java基本数据类型-浮点型<br>–float:单精度        4B    0.0f或0.0F<br>float第一位符号位，紧接8位表示指数，再接下来23位表示尾数。<br>–double:双精度    8B    0.0<br>double第一位符号位，紧接11位表示指数，再接下来52位表示尾数</p>
+<p>Java基本数据类型-字符型<br>–表示字符类型，长度2B。默认值 ‘\u0000’<br>–在java中，字符类型以unicode编码方式进行编码。以2个字节表示一个字符。</p>
+<p>Java基本数据类型-逻辑性<br>–仅表示两种状态。boolean的值只有true，false；<br>–布尔型默认值是false;</p>
+<p>特殊的引用类型- String类型<br>–表示字符串。由“”括起来，且0个或多个字符。<br>•“”;   “a”;  “aaa”;</p>
+<h2 id="•while循环和do-while循环的区别？"><a href="#•while循环和do-while循环的区别？" class="headerlink" title="•while循环和do..while循环的区别？"></a>•while循环和do..while循环的区别？</h2><p>–while循环先判断条件，如果条件成立，则执行循环体，否则，不执行循环体；而do…while，先执行一次循环体，再判断条件。也就说，不管如何，do…while至少会执行一遍循环体。<br>三种循环语句：   for,   while,    do…while<br>       1- 最常用的是for, while循环<br>       2- 三种循环语句是相通。（同一需求，三种循环都可以实现）<br>       3- while和do..while区别<br>           while循环先判断循环条件，然后再执行循环体。可能一次循环体都不执行。<br>           do..while循环，先执行一遍循环体，然后再判断循环条件。至少会执行一遍循环体。</p>
+<h2 id="break-continue的区别"><a href="#break-continue的区别" class="headerlink" title="break, continue的区别"></a>break, continue的区别</h2><p>break:<br>在switch语句中，用于跳出switch语句块。<br>在循环语句中，用于跳出循环。<br>continue:<br>只在循环语句中，表示结束本次循环，进行下次循环。</p>
+<h2 id="类定义"><a href="#类定义" class="headerlink" title="类定义"></a>类定义</h2><p>–访问修饰符  [修饰符]  class  类名<br>{<br>    &#x2F;&#x2F;类的内容<br>    &#x2F;&#x2F;构造函数，属性，方法，代码块<br>}</p>
+<p>–访问修饰符：private, default, protected, public四种。对于访问修饰符来说，普通定义类(外部类)的形式只能使用default,public，而不能使用其他两种修饰符。如果是内部类，四种访问修饰符都可以使用。.java中，如果一个类由public修饰，则该类的名字要与文件名相同。</p>
+<p>–修饰符：描述类的某些特征。在类前,可以使用final, abstract。修饰符可有可无。</p>
+<p>–类名：符合标识符的命名规范。首字母大写。</p>
+<p>–{}：必须要有{}，表示类中的元素。将类的属性，方法，构造函数，代码块均存放与{}中，体现出封装的思想。</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>访问修饰符  [修饰符]  返回值类型  方法名(type  t1, type t2…)<br>{<br>    &#x2F;&#x2F;方法体<br>}</p>
+<p>• 访问修饰符：private,default,protected,public。四种均可使用。如果一个方法仅在当前类中使用，一般用private修饰。</p>
+<p>• 修饰符：一般可以static, final, abstract。可有可无。</p>
+<p>• 返回值：如果方法有返回值，则在方法体中必须使用”return  返回值“。如果方法没有返回值，则在方法的返回值位置，用void标示。</p>
+<p>• 方法名：可以为任意的合法标识符。一般一个单词时，使用动词；如果两个或以上时，使用动宾结构，且第二个单词开始，首字母大写。有意义。</p>
+<p>• 参数列表：可以有0个或多个参数。多个参数时，以”，”分隔。</p>
+<p>• {}：大括号中存放方法体。实现该方法功能的具体的代码。</p>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>访问修饰符  [修饰符]  类型  属性名 &#x3D; 初始值；</p>
+<p>• 访问修饰符：private, default, protected, public，四个都可以。一般情况下，属性使用private修饰，然后通过getter和setter得到私有的属性和设置私有的属性值。</p>
+<p>• 修饰符：描述属性特性的。一般static, final。修饰符可有可无。</p>
+<p>• 类型：必须存在。可以是任意的类型。</p>
+<p>• 属性名：符合标识符规则，且有意义。如果有一个单词，单词全部小写；如果有2个或以上的单词组成，第二个单词开始，首字母大写。</p>
+<p>• 初始值：java中，变量必须要有初始值才能使用。在类中，如果不为属性赋初始值，则系统会自动为其指定初始值。(byte,short,int,long-0; float, double-0.0;  char – ‘\u0000’, boolean-false; 引用类型-null )。还可以使用构造方法为其初始化。</p>
+<p>• new的时候，会先为类中的属性分配空间，然后再运行构造方法。</p>
+<h2 id="构造函数-x2F-方法"><a href="#构造函数-x2F-方法" class="headerlink" title="构造函数&#x2F;方法"></a>构造函数&#x2F;方法</h2><p>–作用：主要在创建对象时，初始化类中的属性。<br>–定义：<br>访问修饰符   类名([参数列表])<br>{<br>  &#x2F;&#x2F;方法体<br>}<br>•1-访问修饰符：private,default,protected,public。一般使用public修饰，也可以private修饰。<br>•2-类名：构造函数的函数名与类名相同。<br>•3-参数列表：可有可无。有的话，主要为属性初始化。<br>•4-方法体：构造函数的方法体一般用于为属性赋值。</p>
+<p><em><strong>构造方法特点</strong></em>：<br>–1-构造方法主要用于初始化对象。<br>–2-构造方法无返回值，且方法名与类名相同。<br>–3-构造方法通常public修饰，也可以由其他访问修饰符修饰。<br>–4-构造方法可以重载。<br>–5-构造方法无法手动调用，在new对象时，自动调用构造函数。<br>–6-每个类中，至少有一个构造方法。如果不显式的写构造方法，则编译器会自动提供一个默认的空的构造方法。提供的该方法没有参数，没有方法体。一旦自定义了一个构造方法，则编译器不再提供空的构造方法。</p>
+<h2 id="创建对象过程分析-new"><a href="#创建对象过程分析-new" class="headerlink" title="创建对象过程分析(new)"></a>创建对象过程分析(new)</h2><p>•创建对象—new<br>–当需要使用类中的属性或方法时，则需要通过对象访问。<br>–Student s &#x3D; new Student([传入的参数值]);通过new关键字创建对象。<br>–new时：1-在堆上为对象分配内存空间，2-使用类型的默认值为属性赋值，3-调用构造函数，初始化类中的属性值。4- 通过&#x3D;将堆上的内存地址，存入栈中。</p>
+<h2 id="this关键字"><a href="#this关键字" class="headerlink" title="this关键字"></a>this关键字</h2><p>–this表示当前对象或实例(instance)。</p>
+<p>–new Student();此时会创建this对象。</p>
+<p>–Student s &#x3D; new Student();先执行new Student();会创建this对象，然后执行&#x3D;,将this对象指向的堆内存的地址，赋值给s。此时可以说，s就是this对象。</p>
+<p><em><strong>this关键字的用法</strong></em>：<br>•1- 取得类中的属性和方法。点取成员。<br>•2- 构造函数或方法的参数名称与属性名称相同时，通过this点取属性，可以区分同名变量。<br>•3- 可以作为构造方法，实现初始化属性。在构造方法中，this必须位于第一行。</p>
+<h2 id="再说方法（函数）及方法重载"><a href="#再说方法（函数）及方法重载" class="headerlink" title="再说方法（函数）及方法重载"></a>再说方法（函数）及方法重载</h2><p>•方法（函数）详解<br>–定义：封装特定功能一段代码，用于提高代码的复用以及便于代码管理。<br>–方法必须在类中定义，方法中不能再定义方法。方法中可以调用其他方法。<br>•特点<br>–方法只有被调用的时候，才会执行。如果方法有返回值，则方法执行结束后，返回值交由调用处处理。<br>–方法的返回值：如果方法有返回值，则在方法体中，必须返回与返回值类型一致的值；如果方法的返回值为void，在方法体中，可以使用return控制方法执行流程，如果return在最后一行，则可以省略不写。<br>–方法的参数：<br>方法定义时的参数，叫形式参数，简称形参。方法在调用处，传入的参数叫做实际参数，简称实参。在调用方法的时候，会将实参赋值给形参，当执行到方法时，会为形参开辟内存空间。</p>
+<p>•方法重载<br>–重载概念：在一个类中，允许函数名相同但参数不同的多个方法。主要为了方便阅读，优化程序设计。<br>–重载规则：<br>•方法的名称相同，方法的参数列表不同（参数的类型，参数的个数不同，参数的顺序不同）。<br>–注意：<br>•形参的名称不同，不能作为重载的标识。<br>•函数的返回值不同，也不能作为重载的标识。<br>–在方法调用时，根据实参的类型，自动匹配调用哪个重载的方法。<br>构造方法也可以重载。</p>
+<h2 id="关键字break，continue，return区别？"><a href="#关键字break，continue，return区别？" class="headerlink" title="关键字break，continue，return区别？"></a>关键字break，continue，return区别？</h2><p>–break：在循环和switch语句中使用，表示跳出循环或分支的语句块。<br>–continue：在循环中使用，表示终止本次循环，继续下次循环。<br>–return：在方法（函数）中使用，表示方法返回值，犯法的返回值，一定要与方法的返回值类型保持一致。一旦运行到return，方法中，return之后的代码不再执行。</p>
+<h2 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h2><p>–什么是封装？<br>•Java中将数据封装起来，可以通过提供的公共接口访问。<br>–Java中封装的体现：<br>•Java中的类，方法本身就体现封装性。<br>•通过private封装属性，使用public修饰getter读和setter写方法(有固定形式)访问私有的属性。<br>–封装的好处？<br>•1-隐藏对象的实现细节。<br>•2-保护用户的数据。<br>3-方便代码的维护。</p>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>–如何实现继承？<br>•通过extends关键字实现继承<br>public class Son  extends Father<br>{<br>    &#x2F;&#x2F;此时，默认Son中有Father的可被继承下来的属性和方法。</p>
+<p>}</p>
+<p>–继承的特点<br>–1-  Java中类与类之间，只能单继承。<br>一个类只能有一个父类，而一个父类可以有多个子类。<br>–2-  类可以有多重继承。<br>a extends b<br>b extends c<br>–3-  构造方法不能被继承。<br>–4-  Object是所有类的直接父类或间接父类。以后所有的类，都包含Object类中继承下来的方法。</p>
+<p>–继承复用和组合复用<br>–B is a A ：继承复用<br>–B has a A：组合复用。在实际开发中，使用组合复用比较多。</p>
+<p>–方法的重写（覆盖）override<br>–定义：在继承中，如果子类的某个或多个方法，它的方法名称，返回值类型，以及参数列表与父类中某个或多个方法完全一样，此时，我们就说子类重写（覆盖）了父类的方法。<br>–方法重写的规则：(必须在继承的结构中)<br>•1-子类中重写方法，返回值，方法名，参数列表的类型必须与父类中被重写的方法相同。<br>–参数列表相同含义：与父类中被重写方法的参数的类型，个数，顺序要完全一样。不包含参数的名称<br>•2-子类中重写的方法不能比父类中被重写的方法的访问权限小。<br>–也就是说重写方法的访问修饰符要大于等于父类中被重写的方法的访问修饰符。<br>–private -&gt; default -&gt; protected -&gt;public<br>•3-子类中重写的方法不能抛出比父类中被重写方法更多的编译时异常。<br>–Overload（重载）和override（重写）<br>–overload表示重载；重载可以在一个类中，也可以在继承关系中；重载的规则：方法名相同，参数列表不同(个数，类型，顺序)。<br>–override表示重写；重写必须在继承中；重写的规则：1， 2， 3</p>
+<p>–super关键字<br>–表示当前类的父类对象。通过super可以引用父类的方法，成员变量，以及构造函数。<br>–super作用：<br>•super表示父类构造方法时：<br>–必须放在子类构造方法的第一行。<br>–默认情况下，子类的构造函数调用是父类的空的构造函数(super())。<br>–如果父类没有指定空的构造函数，此时，子类构造函数中，必须显式的指定调用父类哪个构造函数。<br>•super可以点取父类中被子类隐藏的属性。<br>•super可以点取父类中被子类覆盖（重写）的方法。<br>–this和super关键字？This表示当前对象，this.属性 this.方法<br>                       This([param])表示在构造方法中调用其他构造方法。<br>–this表示当前类的对象；super表示继承关系中父类的对象。<br>–this可表示当前类的构造方法，super表示子类中调用父类的构造方法。这两个语句必须放在第一行。<br>–this.  表示调用本类的属性和方法；super表示在子类中调用父类的属性和方法，super可以解决子类属性和方法与父类属性和方法重名问题。</p>
+<h2 id="访问修饰符-protected"><a href="#访问修饰符-protected" class="headerlink" title="访问修饰符-protected"></a>访问修饰符-protected</h2><p>–访问修饰符：private, default, protected, public<br>–设置Java类中属性，方法，构造函数等访问权限。<br>–使用访问修饰符的原则：不扩大其使用范围。</p>
+<p><img src="/assets/%E5%9B%BE%E7%89%8720.png"></p>
+<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>•1- 父类出现的地方，子类就可以出现。(子类自动转换成父类)。<br>•2-声明什么类型，就只能调用什么类型中的方法；<br>–Father f &#x3D; new Father();  此时f只能调用Father类中的方法<br>–Son s &#x3D; new Son();此时s只能调用Son类中的方法<br>–Father f &#x3D; new Son();此时f只能调用Father类中的方法。<br>–Son ss &#x3D; (Son)f;此时ss只能调用Son类中的方法。<br>•3-创建(new)什么类型，真正执行什么类型内的方法(存在子类重写父类的方法)<br>–Father f &#x3D; new Son();此时f如果有被Son重写的方法，则f.test()调用重写的方法，此时，真正执行的是Son中重写的方法。<br>•4-只有子类自动转换成父类，父类对象才能强制转换成子类。<br>  子类向上转型(upcasting)；父类对象向下转型(downcasting).</p>
+<p>  –instanceof运算符——关系运算符<br>–对象  instanceof  类型<br>•判断对象是否属于该类型。如果属于返回true,否则false<br>–一般用于在强制类型转换前，判断对象是否能强制转换成指定的类型。</p>
+<h2 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h2><p>–位于java.lang包中。<br>–类 Object 是类层次结构的根类。每个类都使用 Object 作为超类。所有对象（包括数组）都实现这个类的方法。<br>–因为Object是所有类的直接或间接父类，所以，Object中的所有方法，其子类都拥有。<br>•toString()—当直接打印对象时，默认输出的是该对象的toString方法的返回值。<br>•equals()—通过类比String的比较形式，重写自定义类的equals方法。<br>–注意：关于Object与数组的关系：<br>•对于数组元素类型为引用类型的数组来说<br>–Object obj &#x3D; strs;&#x2F;&#x2F;子类转换成父类。将数组整个对象转换成Object对象<br>–Object[] objs &#x3D; strs;&#x2F;&#x2F;将数组中的每个元素转换成对应的Object数组<br>•对于数组元素类型为基本数据类型的数组来说<br>–Object obj2 &#x3D; arrs;&#x2F;&#x2F;子类转换成父类对象。将数组整个对象转换成Object对象<br>Object[] objs2 &#x3D; arrs;因为int类型没有父类。</p>
+<h2 id="final修饰符"><a href="#final修饰符" class="headerlink" title="final修饰符"></a>final修饰符</h2><p>–表示最终的。可以修饰类，方法，变量。<br>–final修饰类<br>•表示该类无法被继承。也就是说，一个被final修饰的类，不能有子类。<br>–final修饰方法<br>•表示该方法无法被重写。<br>–final修饰的变量：表示该变量为常量，只能赋值一次。<br>•final修饰实例变量<br>–表示该实例变量为常量，该实例变量必须在声明的同时赋值，如果在声明的时候不赋值，则只能在构造方法中显式的为其赋值。<br>–注意：凡是在类中定义常量，必须使用public static final XXX_XXX&#x3D;value;<br>–演示final修饰引用类型时，常量表示的含义以及修改堆内存中属性值。<br>•final修饰局部变量<br>–可以在声明的同时为其赋值，也可以先声明，再进行一次赋值。<br>–演示final修饰参数时，表示的意思。</p>
+<h2 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h2><p>–static关键字表示静态。能与属性，方法，代码块，内部类等一起使用。<br>–static修饰属性(类变量)和方法时，可以直接通过类名.属性或类名.方法来访问。<br>–静态变量：<br>•一个类中，静态的变量只分配一块内存空间。多个实例对象共享该内存空间。<br>•静态的变量在类加载的时候，被初始化。也就是说，只要类被加载，不管是否使用该静态变量，则都会自动的为其开辟空间，并初始化。<br>–静态方法<br>•在类加载时，加载到JVM。直接使用类名.方法名调用。<br>–静态代码块<br>•是类的组成部分，在类第一次被加载的时候，执行一次。也就说，静态代码块在程序运行时，只能被执行一次。<br>•用于初始化静态的属性。<br>–static特点：<br>–1-static可以修饰属性，方法，代码块。此时属性，方法，代码块就变成了类变量，静态方法，静态代码块。注意：静态不能修饰局部变量。<br>–2-类变量，静态方法，静态代码块与具体某个对象无关，是属于类级别。如果访问权限允许，通过类名.方法名或类名.属性名访问。<br>–3-静态变量，静态代码块都是在类加载时，执行并初始化。<br>–4-一个类的静态方法或静态代码块，只能访问静态的属性和静态方法，不能直接访问非静态的属性和方法。对于非静态的方法或代码块，可以直接访问静态的或非静态的属性和方法。<br>–5-静态方法或静态代码块中，不能使用this，super关键字。因为this，super是对象，对象在静态之后创建的。<br>–6-静态方法可以被隐藏，但不体现多态；父类如果是静态方法，子类不能覆盖为非静态方法；父类如果是非静态方法，子类不能覆盖为静态方法。<br>–7-构造方法不允许声明为static。因为构造方法是在创建对象时，自动调用；而static属于类级别的。</p>
+<h2 id="静态"><a href="#静态" class="headerlink" title="静态"></a>静态</h2><p>–关于静态的用法：<br>–静态属性：(类变量)<br>•节省内存空间。但生命周期从类加载分配内存开始，到程序结束。<br>•实际使用中，当多个对象共享某些数据时，可以将这些设置为静态的变量； 定义常量；<br>–静态方法：<br>•不需要创建对象，直接通过类名.方法。静态方法中不能使用非静态的属性和方法。<br>•在实际使用中，定义一些和非静态的属性和方法无关的功能时，使用。比如工具类。<br>–静态代码块<br>•在类加载的时候，只运行一次。<br>实际的使用中，比较少。比如，JDBC时，数据库驱动的加载，可以放在静态代码块中，仅加载一起，后续就可以直接使用。</p>
+<h2 id="抽象类和抽象方法"><a href="#抽象类和抽象方法" class="headerlink" title="抽象类和抽象方法"></a>抽象类和抽象方法</h2><p>–什么是抽象方法？<br>•如果一个类中的方法，只有方法的定义而没有具体的方法实现，则称该方法为抽象方法。也就是说抽象方法没有方法体。即：没有{}。<br>–什么是抽象类？<br>•由abstract修饰的类就是抽象类。<br>–抽象类的特点：<br>•1-由abstract修饰的类，就是抽象类。<br>•2-抽象类中可以有抽象方法，也可以有具体方法及构造方法等。<br>•3-抽象类不能实例化。只能声明抽象类引用其子类对象使用。<br>•4-含有抽象方法的类，一定是抽象类；而抽象类不一定包含抽象方法。<br>•5-抽象类中含有抽象方法，如果其子类没有全部重写抽象方法，则该子类必须被标识为抽象类。</p>
+<h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>–接口的特性：<br>–1-接口使用关键字interface定义；接口不是类，但在用法及命名上，和类相似。<br>–2-接口中，所有的方法都是public abstract修饰的抽象方法；所有的属性都是public static final修饰的静态常量。所以，在接口中，定义常量和方法时，相同的修饰符可省略。<br>–3- 类通过implements实现接口。一个类要么全部实现接口中所有的抽象方法；要么该类是抽象类。在重写接口中的方法时，public不可省略。<br>–4-接口不可以用new来实例化，但可以声明一个接口,引用其实现类对象。<br>–5-一个类只能继承一个类，但可以实现多个接口,多个接口以,分隔。<br>public class A  extends B  implements IA, IB, IC….{}。也就是说Java中可以通过接口间接的实现多继承。<br>–6-类与类之间是单继承，使用关键字extends；接口与接口之间，也是继承，使用extends，且接口与接口可以直接实现多继承；类与接口之间，是实现，使用implements，一个类可以实现多个接口.<br>–7- 接口中也可以不包含任何值，仅作为一种标识。如java.io.Serializable<br>–注意：<br>–接口不是类，但在用法上和类相似。<br>•1-一个.java文件中，只能由一个public修饰的接口或类。且文件名与接口名或类名相同<br>•类与类只有继承且只能继承一个类。类与接口实现，类可以实现多个接口。接口与接口继承，可以继承多个接口。<br>–接口主要用于定义行为。根据语义，继承是”is  a”关系，而操作接口表示拥有某种行为</p>
+<h2 id="•接口和抽象类的异同"><a href="#•接口和抽象类的异同" class="headerlink" title="•接口和抽象类的异同"></a>•接口和抽象类的异同</h2><p>–接口和抽象类相似，它们都具有如下特征<br>•接口和抽象类都不能被实例化。只能被其他类实现和继承。<br>•接口和抽象类都可以包含抽象方法，实现接口和抽象类的类都必须实现这些抽象方法<br>–接口和抽象类有如下不同<br>•抽象类与接口定义不同：抽象类abstract class ,接口  interface<br>•接口里只能包含抽象方法，不包含已经实现的方法；抽象类则完全可以包含普通的方法。<br>•接口里不能定义静态方法；抽象类可以定义静态方法<br>•接口里只能定义静态常量属性，不能定义普通属性；抽象类里既可以定义普通属性，也可以定义静态常量<br>•接口不包含构造函数；抽象类可以包含构造函数，抽象类里的构造函数并不是用于创建对象，而是让其子类调用这些构造函数来完成属于抽象类的初始化操作。<br>•接口不包含初始化块，但抽象类可以包含初始化块<br>•一个类最多只能有一个直接父类，包括抽象类；但一个类可以直接实现多个接口，通过实现多个接口可以弥补java的单继承不足。</p>
+<h2 id="–基本类型与包装类之间互相转换"><a href="#–基本类型与包装类之间互相转换" class="headerlink" title="–基本类型与包装类之间互相转换"></a>–基本类型与包装类之间互相转换</h2><p>–&#x2F;&#x2F;1-基本类型-&gt;包装类  int<br>int i &#x3D; 10;<br>Integer ii1 &#x3D; new Integer(i);&#x2F;&#x2F;1-通过包装类的构造方法<br>Integer ii2 &#x3D; Integer.valueOf(i);&#x2F;&#x2F;2-valueOf方法<br>&#x2F;&#x2F;2-包装类-&gt;基本数据类型<br>int x &#x3D; ii1.intValue();</p>
+<h2 id="日期类"><a href="#日期类" class="headerlink" title="日期类"></a>日期类</h2><p>–Date<br>•从 JDK 1.1 开始，应该使用 Calendar 类实现日期和时间字段之间转换，使用 DateFormat 类来格式化和解析日期字符串。Date 中的相应方法已废弃。<br>–DateFormat(抽象类)-&gt;子类SimpleDateFormat<br>•它允许进行格式化（日期 -&gt; 文本）、解析（文本 -&gt; 日期）和规范化。<br>•Date-&gt;String,  String-&gt;Date<br>–Calendar<br>•Calendar 类是一个抽象类，它为特定瞬间与一组诸如 YEAR、MONTH、DAY_OF_MONTH、HOUR 等 日历字段之间的转换提供了一些方法，并为操作日历字段（例如获得下星期的日期）提供了一些方法 .<br>•Calendar 提供了一个类方法 getInstance，以获得此类型的一个通用的对象。Calendar 的 getInstance 方法返回一个 Calendar 对象 </p>
+<h2 id="–JDK中，常见的包："><a href="#–JDK中，常见的包：" class="headerlink" title="–JDK中，常见的包："></a>–JDK中，常见的包：</h2><p>•java.lang：基本包，默认在每个.java文件中，已经存在。<br>•java.io：对流操作<br>•java.net：网络相关。<br>•java.sql：与数据库相关<br>•java.util：工具包<br>•java.awt：图形界面<br>javax.swing：图形界面。</p>
+<h2 id="在try-catch-finally语句中，finally语句是必须执行的。"><a href="#在try-catch-finally语句中，finally语句是必须执行的。" class="headerlink" title="在try-catch-finally语句中，finally语句是必须执行的。"></a>在try-catch-finally语句中，finally语句是必须执行的。</h2><h2 id="toCharArray-方法将字符串转换为字符数组。"><a href="#toCharArray-方法将字符串转换为字符数组。" class="headerlink" title="toCharArray() 方法将字符串转换为字符数组。"></a>toCharArray() 方法将字符串转换为字符数组。</h2><h2 id="BufferedWriter-字符缓冲输出流"><a href="#BufferedWriter-字符缓冲输出流" class="headerlink" title="BufferedWriter:字符缓冲输出流"></a>BufferedWriter:字符缓冲输出流</h2><h2 id="BufferedWriter和Writer用法的区别"><a href="#BufferedWriter和Writer用法的区别" class="headerlink" title="BufferedWriter和Writer用法的区别"></a>BufferedWriter和Writer用法的区别</h2><p><img src="/assets/%E5%9B%BE%E7%89%8721.png"></p>
+<h2 id="BufferedWriter"><a href="#BufferedWriter" class="headerlink" title="BufferedWriter"></a>BufferedWriter</h2><p>采用bufferedWriter时换行不变使用bw.write(“\r\n”);进行换行<br>如下所示：<br><img src="/assets/%E5%9B%BE%E7%89%8722.png"></p>
+<h2 id="PrintWriter-比BufferedWriter更加的通用和方便"><a href="#PrintWriter-比BufferedWriter更加的通用和方便" class="headerlink" title="PrintWriter(比BufferedWriter更加的通用和方便)"></a>PrintWriter(比BufferedWriter更加的通用和方便)</h2><p><img src="/assets/%E5%9B%BE%E7%89%8723.png"></p>
+<h2 id="字节流和字符流之间转换的重要的部分"><a href="#字节流和字符流之间转换的重要的部分" class="headerlink" title="字节流和字符流之间转换的重要的部分"></a>字节流和字符流之间转换的重要的部分</h2><p><img src="/assets/%E5%9B%BE%E7%89%8724.png"></p>
 
                 
             </div>
@@ -502,7 +557,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://whyzyzz.github.io/2022/03/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">https://whyzyzz.github.io/2022/03/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</a>
+                    <a href="https://whyzyzz.github.io/2022/03/16/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">https://whyzyzz.github.io/2022/03/16/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -715,13 +770,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/06/%E4%BD%BF%E7%94%A8Hexo%E5%86%99%E5%8D%9A%E5%AE%A2/">
+                <a href="/2022/03/19/%E7%BA%BF%E7%A8%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="使用Hexo写博客">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="线程">
                         
-                        <span class="card-title">使用Hexo写博客</span>
+                        <span class="card-title">线程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -732,7 +787,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-06
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-19
                         </span>
                         <span class="publish-author">
                             
@@ -752,13 +807,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/05/hello-world/">
+                <a href="/2022/03/12/%E6%95%B0%E7%BB%84/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="数组">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">数组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -769,7 +824,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
                             </span>
                         <span class="publish-author">
                             
