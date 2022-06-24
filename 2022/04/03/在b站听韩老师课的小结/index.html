@@ -4,10 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="平时写代码遇到的问题总结, 晚枫">
-    <meta name="description" content="输入输出流和异常处理问题
-break,continuebreak 可以用于switch和循环结构之中，continue只能用于循环结构之中。
-1.用于switch语句中,从中途退出switch语句。2.用于循环语句中,从循环体内直接退出当前">
+    <meta name="keywords" content="在b站听韩老师课的小结, 晚枫">
+    <meta name="description" content="数据类型
+有关this加this表示全局变量，不加表示局部变量。
+重写的规则是方法名和形参列表要相同，别人父类就是object类型
+因为obj是一个披着Object类型皮的Person类型对象，实际上就是Object obj &amp;#x3D; ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +20,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>平时写代码遇到的问题总结 | 晚枫</title>
+    <title>在b站听韩老师课的小结 | 晚枫</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -311,12 +312,12 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">平时写代码遇到的问题总结</h1>
+                    <h1 class="description center-align post-title">在b站听韩老师课的小结</h1>
                 </div>
             </div>
         </div>
@@ -444,7 +445,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-28
+                    2022-04-03
                 </div>
                 
 
@@ -468,20 +469,69 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="输入输出流和异常处理问题"><a href="#输入输出流和异常处理问题" class="headerlink" title="输入输出流和异常处理问题"></a>输入输出流和异常处理问题</h2><p><img src="/assets/%E5%9B%BE%E7%89%8725.png"></p>
-<h2 id="break-continue"><a href="#break-continue" class="headerlink" title="break,continue"></a>break,continue</h2><p>break 可以用于switch和循环结构之中，continue只能用于循环结构之中。</p>
-<p>1.用于switch语句中,从中途退出switch语句。<br>2.用于循环语句中,从循环体内直接退出当前循环。</p>
-<p>break是跳出整个循环，continue是跳出本次循环。</p>
-<h2 id="Integer-parseInt-String强转成整型"><a href="#Integer-parseInt-String强转成整型" class="headerlink" title="Integer.parseInt(String强转成整型)"></a>Integer.parseInt(String强转成整型)</h2><p><img src="/assets/%E5%9B%BE%E7%89%8726.png"></p>
-<h2 id="static为什么一般与final一起用？"><a href="#static为什么一般与final一起用？" class="headerlink" title="static为什么一般与final一起用？"></a>static为什么一般与final一起用？</h2><p>static和final的意义是不同的：<br>static修饰的时候代表对象是静态的，而final修饰的时候代表对象只能赋值一次，<br>他们连用的时候是因为定义的那个对象既要它是静态的，也要求它的值不能再被修改。</p>
-<h2 id="静态方法和非静态方法相互调用"><a href="#静态方法和非静态方法相互调用" class="headerlink" title="静态方法和非静态方法相互调用"></a>静态方法和非静态方法相互调用</h2><p><em><strong>在同一个类中：</strong></em><br>对于静态方法，其他的静态或非静态方法都可以直接调用它。<br>而对于非静态方法，其他的非静态方法是可以直接调用它的。但是其他静态方法只有通过对象才能调用它。静态方法不能被非静态方法覆盖。</p>
-<p><em><strong>不同的类之间：</strong></em><br>无论调用方法是非静态还是静态，如果被调用的方法是：<br>静态方法，则通过类名与对象都可以调（但通过对象的方式不建议使用，因为它属于非静态调用的方式）<br>非静态方法，则只能通过对象才可以调用它</p>
-<h2 id="类后面加不加括号"><a href="#类后面加不加括号" class="headerlink" title="类后面加不加括号"></a>类后面加不加括号</h2><p>调用类时，不加括号。那么这个变量a 或者 b 都将时类本身。<br>而加上括号之后。那么变量b 就是类实例化出的对象。就是继承类的时候，括号里就要填父类名。</p>
-<h2 id="interface：接口"><a href="#interface：接口" class="headerlink" title="interface：接口"></a>interface：接口</h2><h2 id="JAVA中extends-与implements有啥区别？"><a href="#JAVA中extends-与implements有啥区别？" class="headerlink" title="JAVA中extends 与implements有啥区别？"></a>JAVA中extends 与implements有啥区别？</h2><ol>
-<li>在类的声明中，通过关键字extends来创建一个类的子类。一个类通过关键字implements声明自己使用一个或者多个接口。<br>extends 是继承某个类, 继承之后可以使用父类的方法, 也可以重写父类的方法; implements 是实现多个接口, 接口的方法一般为空的, 必须重写才能使用</li>
-</ol>
-<p>2.extends是继承父类，只要那个类不是声明为final或者那个类定义为abstract的就能继承，JAVA中不支持多重继承，但是可以用接口 来实现，这样就要用到implements，继承只能继承一个类，但implements可以实现多个接口，用逗号分开就行了</p>
-<h2 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h2><p>–重载概念：在一个类中，允许函数名相同但参数不同的多个方法。主要为了方便阅读，优化程序设计。<br>–重载规则：<br>•方法的名称相同，方法的参数列表不同（参数的类型，参数的个数不同，参数的顺序不同）。<br>–注意：<br>•形参的名称不同，不能作为重载的标识。<br>•函数的返回值不同，也不能作为重载的标识。<br>–在方法调用时，根据实参的类型，自动匹配调用哪个重载的方法。<br>构造方法也可以重载。<br>•注意：以后所有的实现，一定要通过方法实现。不能直接写在main方法中了。</p>
+                <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p><img src="/assets/%E5%9B%BE%E7%89%8729.png"></p>
+<h2 id="有关this"><a href="#有关this" class="headerlink" title="有关this"></a>有关this</h2><p>加this表示全局变量，不加表示局部变量。</p>
+<p>重写的规则是方法名和形参列表要相同，别人父类就是object类型</p>
+<p>因为obj是一个披着Object类型皮的Person类型对象，实际上就是Object obj &#x3D; new Person;现在明白了吗？</p>
+<p>Person p &#x3D;(Person)obj<br>instanceof判断的是<strong>运行类型</strong>，因为多态参数的性质，形参列表是Object类型，那么参数的编译类型就是Object,没办法调用String类型的成员，需要向下转型。</p>
+<p>因为这是<strong>在本类中调用，private在本类中可以直接调用</strong>亲们。<br>a和b都是同类的可以直接访问private属性。</p>
+<p>对于java的动态绑定机制：当调用对象的<strong>方法</strong>时，看的是 <em><strong>运行时类型</strong></em> 。即对象的方法是运行时类型里的方法，若方法中包含属性，则此属性也是运行时类型中的属性。当调用对象的<strong>属性</strong>时，看的是 <em><strong>编译时类型</strong></em>。即对象的属性是编译时类型里的属性。</p>
+<p>重载(overload)的方法是用静态绑定完成，而重写(override)的方法则使用动态绑定完成。</p>
+<p><strong>重写：先判断两个对象是否是同一个对象，然后进行类型的判断。</strong></p>
+<p>this.name是属性，是String类型，根据动态绑定机制运行的是Sting类的equals。不信写一下代码，按CRTL+ B，它会跳到String的equals方法</p>
+<p><img src="/assets/%E5%9B%BE%E7%89%8730.png"></p>
+<p>a%b&#x3D;a-a&#x2F;b*b</p>
+<h2 id="转义字符："><a href="#转义字符：" class="headerlink" title="转义字符："></a>转义字符：</h2><p>\t:一个制表位，实现对齐的功能<br>\n:换行符<br>\ :一个<br>&quot;:一个”<br>&#39;:一个’<br>\r:一个回车System.out.println(“ckjbdv\rskb”) 输入光标回到行的开头</p>
+<h2 id="DOS-cmd-命令"><a href="#DOS-cmd-命令" class="headerlink" title="DOS(cmd)命令"></a>DOS(cmd)命令</h2><p><img src="/assets/%E5%9B%BE%E7%89%8731.png"></p>
+<p><img src="/assets/%E5%9B%BE%E7%89%8733.png"></p>
+<h1 id="x3D-x3D-和equals方法"><a href="#x3D-x3D-和equals方法" class="headerlink" title="&#x3D;&#x3D;和equals方法()"></a>&#x3D;&#x3D;和equals方法()</h1><p>java的String是一个很神奇的数据类型，因为它有两种声明方法：</p>
+<p>String a &#x3D; “abc”；</p>
+<p>String b &#x3D; new String(“abc”);</p>
+<p>这两种声明方法得到的String是不一样的，第一种声明方法得到的String是存储在String&#x3D;&#x3D;常量池&#x3D;&#x3D;里面的，而第二种方式的声明很明显是正常的创建一个对象的使用方法，所以存储在&#x3D;&#x3D;堆&#x3D;&#x3D;中。</p>
+<p>&#x3D;&#x3D;一、&#x3D;&#x3D; 这面我们先介绍一下“ &#x3D;&#x3D; ”。<strong>基本数据类型</strong>上的“ &#x3D;&#x3D; ”，是通过比较它们 <em><strong>实际的值(就是最后得到的值相同就行，不一定形式要相同)</strong></em> 来判断是否相同；如下所示，帮助进一步理解！！！<img src="/assets/1.jpg"></p>
+<p>&#x3D;&#x3D;二、&#x3D;&#x3D; 而对于<strong>引用数据类型</strong>，<strong>一般</strong>的类是默认继承Object类里的equals方法， 也就是 <em><strong>俩个引用的地址(对象)</strong></em> 是否相等。但是有两个**例外(如下所示)**，String和Integer是引用数据类型，但是这两个类里面已经重写了equals方法，也就是这两个比较的是真实值。</p>
+<pre class="language-none"><code class="language-none">下面 的代码是Integer中的equals方法的源码，也q是重写了，变成了判断两个值是否相同。
+ public boolean equals(Object obj) &#123;
+	if (obj instanceof Integer) &#123;
+		return value &#x3D;&#x3D; ((Integer)obj).intValue();
+                &#125;
+		return false;
+		&#125;
+	Integer integer&#x3D;new Integer(5);</code></pre>
+<p>运行结果如下：<br><img src="/assets/%E5%9B%BE%E7%89%8735.png"></p>
+<pre class="language-none"><code class="language-none">下面 的代码是String中的equals方法的源码，也是重写了，变成了判断两个值是否相同。
+public boolean equals(Object anObject) &#123;
+	 if (this &#x3D;&#x3D; anObject) &#123;
+		  return true;
+		    &#125;
+	         if (anObject instanceof String) &#123;
+		          String anotherString &#x3D; (String)anObject;
+		          int n &#x3D; value.length;
+		          if (n &#x3D;&#x3D; anotherString.value.length) &#123;
+		          char v1[] &#x3D; value;
+		          char v2[] &#x3D; anotherString.value;
+		          int i &#x3D; 0;
+		          while (n-- !&#x3D; 0) &#123;
+		          if (v1[i] !&#x3D; v2[i])
+		                      return false;
+		                 i++;
+		                &#125;
+		                return true;
+		            &#125;
+		        &#125;
+		        return false;
+		    &#125;
+</code></pre>
+<p>运行结果如下：</p>
+<p><img src="/assets/%E5%9B%BE%E7%89%8734.png"></p>
+<p><em><strong>1.</strong></em> <img src="/assets/%E5%9B%BE%E7%89%8735.png"><br><em><strong>两个 new Integer() 变量比较 ，永远是 false(如上图所示)</strong></em><br>因为new生成的是两个对象，其内存地址不同。</p>
+<p><strong>2.</strong><br><img src="/assets/%E5%9B%BE%E7%89%8737.png"><br><em><strong>Integer变量 和 new Integer() 变量比较 ，永远为 false。(如上图所示)</strong></em><br>因为 Integer变量 指向的是 java 常量池 中的对象，<br>而 new Integer() 的变量指向 堆中 新建的对象，两者在内存中的地址不同。<br><img src="/assets/%E5%9B%BE%E7%89%8740.png"></p>
+<p><strong>3.</strong><br><img src="/assets/%E5%9B%BE%E7%89%8738.png"><br><em><strong>两个Integer变量比较，如果两个变量的值在区间-128到127 之间，那么会把这两个一样的数值放在一个叫常量池的东西里(Integer i &#x3D; 127 时，会将127进行缓存，下次再写Integer j &#x3D; 127时，就会直接从缓存中取，就不会new了。)，所以地址会一样。所以比较结果为true，如果两个变量的值不在此区间，则比较结果为 false 。</strong></em></p>
+<p><strong>4.</strong><br><img src="/assets/%E5%9B%BE%E7%89%8739.png"><br><em><strong>int 变量 与 Integer、 new Integer() 比较时，只要两个的值是相等，则为true</strong></em><br>因为包装类Integer 和 基本数据类型int 比较时，java会自动拆包装为int ，然后进行比较，实际上就变为两个int变量的比较。</p>
+<p>&#x3D;&#x3D;混合调试方便进一步理解！！！&#x3D;&#x3D;</p>
+<p><img src="/assets/%E5%9B%BE%E7%89%8736.jpg"></p>
+<h2 id="面试题：重载（Overload）和重写（Override）的区别。重载的方法能否根据返回类型进行区分？"><a href="#面试题：重载（Overload）和重写（Override）的区别。重载的方法能否根据返回类型进行区分？" class="headerlink" title="面试题：重载（Overload）和重写（Override）的区别。重载的方法能否根据返回类型进行区分？"></a>面试题：重载（Overload）和重写（Override）的区别。重载的方法能否根据返回类型进行区分？</h2><p>答：方法的重载和重写都是实现多态的方式，区别在于前者实现的是编译时的多态性，而后者实现的是运行时的多态性。重载发生在一个类中，同名的方法如果有不同的参数列表（参数类型不同、参数个数不同或者二者都不同）则视为重载；重写发生在子类与父类之间，重写要求子类被重写方法与父类被重写方法有相同的参数列表，有兼容的返回类型，比父类被重写方法更好访问，不能比父类被重写方法声明更多的异常（里氏代换原则）。重载对返回类型没有特殊的要求，不能根据返回类型进行区分。</p>
+<h2 id="只是基本数据类型传递的是栈内存中的真实值，而引用传递传递的是栈中堆内存的地址。"><a href="#只是基本数据类型传递的是栈内存中的真实值，而引用传递传递的是栈中堆内存的地址。" class="headerlink" title="只是基本数据类型传递的是栈内存中的真实值，而引用传递传递的是栈中堆内存的地址。"></a>只是基本数据类型传递的是栈内存中的真实值，而引用传递传递的是栈中堆内存的地址。</h2><h2 id="值传递和引用传递赋值都是栈中的值"><a href="#值传递和引用传递赋值都是栈中的值" class="headerlink" title="值传递和引用传递赋值都是栈中的值"></a>值传递和引用传递赋值都是栈中的值</h2><p>–不管哪种传递，都可以看做是栈内存中的值的传递。所以，也可以说，java中所有的传递都是值传递；只是基本数据类型传递的是栈内存中的真实值，而引用传递传递的是栈中堆内存的地址。<br>–值传递：不改变外部的值。（栈中）<br>–引用传递：改变外部的值。（堆上引用的值）<br>–String是引用类型，但因为String是不可变的。所以，虽然是引用传递，但并不改变外部String的值。</p>
 
                 
             </div>
@@ -508,7 +558,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://whyzyzz.github.io/2022/03/28/%E5%B9%B3%E6%97%B6%E5%86%99%E4%BB%A3%E7%A0%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/">https://whyzyzz.github.io/2022/03/28/%E5%B9%B3%E6%97%B6%E5%86%99%E4%BB%A3%E7%A0%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</a>
+                    <a href="https://whyzyzz.github.io/2022/04/03/%E5%9C%A8b%E7%AB%99%E5%90%AC%E9%9F%A9%E8%80%81%E5%B8%88%E8%AF%BE%E7%9A%84%E5%B0%8F%E7%BB%93/">https://whyzyzz.github.io/2022/04/03/%E5%9C%A8b%E7%AB%99%E5%90%AC%E9%9F%A9%E8%80%81%E5%B8%88%E8%AF%BE%E7%9A%84%E5%B0%8F%E7%BB%93/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -721,13 +771,13 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/04/03/%E5%9C%A8b%E7%AB%99%E5%90%AC%E9%9F%A9%E8%80%81%E5%B8%88%E8%AF%BE%E7%9A%84%E5%B0%8F%E7%BB%93/">
+                <a href="/2022/04/19/SSM%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AD%A6%E4%B9%A0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="在b站听韩老师课的小结">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="SSM框架的学习">
                         
-                        <span class="card-title">在b站听韩老师课的小结</span>
+                        <span class="card-title">SSM框架的学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -738,7 +788,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-19
                         </span>
                         <span class="publish-author">
                             
@@ -758,13 +808,13 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/19/%E7%BA%BF%E7%A8%8B/">
+                <a href="/2022/03/28/%E5%B9%B3%E6%97%B6%E5%86%99%E4%BB%A3%E7%A0%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="线程">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="平时写代码遇到的问题总结">
                         
-                        <span class="card-title">线程</span>
+                        <span class="card-title">平时写代码遇到的问题总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -775,7 +825,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-28
                             </span>
                         <span class="publish-author">
                             

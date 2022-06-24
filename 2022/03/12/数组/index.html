@@ -499,15 +499,18 @@
 <h2 id="ArrayList支持3种遍历方式"><a href="#ArrayList支持3种遍历方式" class="headerlink" title="ArrayList支持3种遍历方式"></a>ArrayList支持3种遍历方式</h2><ul>
 <li>第一种，通过迭代器遍历。即通过Iterator去遍历。</li>
 </ul>
-<p><img src="/assets/%E5%9B%BE%E7%89%874.png"></p>
+<p><img src="/assets/4.png"></p>
+<p><img src="/assets/%E5%9B%BE%E7%89%8743.png"></p>
 <ul>
 <li>第二种，随机访问，通过索引值去遍历。</li>
 </ul>
 <p><img src="/assets/%E5%9B%BE%E7%89%875.png"></p>
 <ul>
-<li>第三种，for循环遍历。如下：</li>
+<li>第三种，for循环遍历。<br>基本语法：<br>for(元素类型 元素名：集合名或数组名){<br>  访问元素<br>}</li>
 </ul>
+<p>如下：</p>
 <p><img src="/assets/%E5%9B%BE%E7%89%876.png"></p>
+<p><img src="/assets/%E5%9B%BE%E7%89%8744.png"></p>
 <p>遍历ArrayList时，使用随机访问(即，通过索引序号访问)效率最高，而使用迭代器的效率最低！</p>
 <h2 id="Java中ArrayList和LinkedList区别"><a href="#Java中ArrayList和LinkedList区别" class="headerlink" title="Java中ArrayList和LinkedList区别"></a>Java中ArrayList和LinkedList区别</h2><ol>
 <li><p>ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。 </p>
@@ -518,11 +521,49 @@
 </li>
 </ol>
 <h2 id="3-2-1操作List以及常用实现类"><a href="#3-2-1操作List以及常用实现类" class="headerlink" title="3.2.1操作List以及常用实现类"></a>3.2.1操作List以及常用实现类</h2><p>List就是一个线性表，列表，它的特色是 <em><strong>保证添加顺序</strong></em>，<em><strong>元素可以重复</strong></em>，可以添加null值。</p>
+<h1 id="集合中任何类内置方法的调用涉及的元素必须是-x3D-x3D-对象类型-x3D-x3D-，这一点与数组不一样。"><a href="#集合中任何类内置方法的调用涉及的元素必须是-x3D-x3D-对象类型-x3D-x3D-，这一点与数组不一样。" class="headerlink" title="集合中任何类内置方法的调用涉及的元素必须是&#x3D;&#x3D;对象类型&#x3D;&#x3D;，这一点与数组不一样。"></a>集合中任何类内置方法的调用涉及的元素必须是&#x3D;&#x3D;对象类型&#x3D;&#x3D;，这一点与数组不一样。</h1><p><img src="/assets/%E5%9B%BE%E7%89%8741.png"></p>
+<p>具体的取值范围：<br><img src="/assets/%E5%9B%BE%E7%89%8742.png"></p>
+<p>Collection接口实现类的特点(&#x3D;&#x3D;继承Iterable接口里面有迭代器对象&#x3D;&#x3D;)<br>1.Collection实现子类可以存放多个元素，每个元素可以是Object<br>2.有些Collection的实现类，可以存放重复的元素，有些不可以<br>3.有些Collection的实现类，有些是有序的(List),有些不是有序的(Set)<br>4.Collection接口没有直接的实现子类，是通过它的子接口Set和List来实现的。接口可以指向实现该接口的类。</p>
+<p>&#x3D;&#x3D;1.&#x3D;&#x3D; 单列集合<br><img src="/assets/2.jpg"></p>
+<p>List有序集合存放对象的引用，可重复，接口继承Collection。</p>
+<p>接口类型可以指向实现该接口类的对象实例。</p>
+<h2 id="3-2-3复习List-优势是可以通过下标-以及父接口Collection"><a href="#3-2-3复习List-优势是可以通过下标-以及父接口Collection" class="headerlink" title="3.2.3复习List(优势是可以通过下标)以及父接口Collection"></a>3.2.3复习List(优势是可以通过下标)以及父接口Collection</h2><p>首先要说明的是，我们队Collecton的了解越深入，那么List以及Set作为Collection子类我们越能很好的把控里面的方法操作。<br><strong>Collection接口</strong>中的方法有：<br>boolean add(Object)添加参数作为元素(Object的子类都可)<br>boolean addAll(Collection)    添加一个集合<br>boolean remove(Object)&#x2F;(index)删除参数这个元素&#x2F;删除下标<br>removeAll:删除多个元素。<br>boolean contains:查找元素(另一个接口里集合)是否存在<br>boolean containsAll:查找多个元素(另一个接口里集合)是否存在<br>clear()        清空集合中所有元素<br>int size()    获取元素个数<br>Object[] toArray()把集合中的元素们以数组形式返回<br>boolean isEmpty()测试集合中是否有元素（是不是空集合）<br>&#x3D;&#x3D;Iterator iterator()    返回集合对应的迭代器（Iterator），迭代器的作用专门用来遍历集合中元素。&#x3D;&#x3D;</p>
+<p><img src="/assets/%E5%9B%BE%E7%89%8743.png"></p>
+<h2 id="实现Collection接口的都可以用-x3D-x3D-迭代器-x3D-x3D-因为Iterable-源码里有迭代器对象-是Collection接口的父类。"><a href="#实现Collection接口的都可以用-x3D-x3D-迭代器-x3D-x3D-因为Iterable-源码里有迭代器对象-是Collection接口的父类。" class="headerlink" title="实现Collection接口的都可以用&#x3D;&#x3D;迭代器&#x3D;&#x3D;因为Iterable(源码里有迭代器对象)是Collection接口的父类。"></a>实现Collection接口的都可以用&#x3D;&#x3D;迭代器&#x3D;&#x3D;因为Iterable(源码里有迭代器对象)是Collection接口的父类。</h2><p>在调用iterator.next()方法之前必须调用iterator.hasNext()进行检测。若不调用，且下一条记录无效，直接调用it.next()会抛出NoSuchElementException异常。</p>
+<p>List接口继承了Collection接口，自然Collection中的所有方法List也有，与此同时List还有一些关于下标操作的方法：</p>
+<p>void add(int,Object) 带下标的添加（实际是插入）</p>
+<p>boolean addAll(int,Collection)在某个下标位置增加接口</p>
+<p>int indexOf(Object obj):返回obj在当前集合中首次出现的位置</p>
+<p>Object remove(int) 按照参数（作为下标）删除元素并且返回</p>
+<p>Object get(int) 按照参数（下标）获取对应的元素</p>
+<p>List subList(int,int) 获取子列表</p>
+<p>Object set(int,Object) 替换元素，返回被替换的值</p>
+<p><strong>集合中的元素返回子列表</strong><br><img src="/assets/%E5%9B%BE%E7%89%8727.png"></p>
+<h2 id="java中private用法"><a href="#java中private用法" class="headerlink" title="java中private用法"></a>java中private用法</h2><p>一般放在类中，用来修饰属性的，为了提高程序的独立性，减少耦合度。private表示一个类的私有属性，只能在本类中访问到，在其他的类中无法进行访问。</p>
+<p>个人总结：如果定义的这个方法、变量只能在本类总访问，那么就定义成private类型，就是一个权限而已，没必要去深入理解的，有些东西理解了就可以，不要钻牛角尖了。</p>
+<h2 id="Set常用实现类"><a href="#Set常用实现类" class="headerlink" title="Set常用实现类"></a>Set常用实现类</h2><p>HashSet：作为Set接口的主要实现类，线程不安全，可以存储null值。<br>LinkedHashSet：作为HashSet的子类；遍历其内部数据时，可以按照添加的顺序遍历。<br>TreeSet：可以按照添加对象的指定属性，进行排序。</p>
+<p><strong>HashSet与LinkedHashSet(&#x2F;&#x2F;Set的另一个特殊子类，带添加顺序的Set)比较：</strong></p>
+<p>对于频繁的遍历操作，LinkedHashSet效率高于HashSet。</p>
+<p>原因：<br>LinkedHashSet作为HashSet的子类，在添加数据的同时，每个数据还维护了两个引用，记录此数据的前一个和后一个数据。</p>
+<h2 id="TreeSet"><a href="#TreeSet" class="headerlink" title="TreeSet:"></a>TreeSet:</h2><p>1.向TreeSet中添加的数据，要求是相同类的对象。</p>
+<p>2.两种排序方式：自然排序（实现Comparable接口） 和 定制排序（Comparator对象）。</p>
+<p>自然排序中，比较两个对象是否相同的标准为：compareTo()返回0，不再是equals()方法。int compareTo(Object)   </p>
+<p>定制排序中，比较两个对象是否相同的标准为：compare返回0，不再是equals()方法。 int compare(Object o1,Oject o2)</p>
+<h2 id="重写compareTo-方法"><a href="#重写compareTo-方法" class="headerlink" title="重写compareTo()方法"></a>重写compareTo()方法</h2><p>这里之所以可以直接用，因为<strong>比较的两者是基本类型</strong>，this.id.compareTo(arg0.id，都是字符型。两个string做简单比较是不存在歧义不需要重写就可以实现的，只有当比较对象是Student这种复杂的，里面包含多个属性的类对象，原始的comparaTo才无法比较，需要重写。</p>
+<h2 id="List内部排序sort方法"><a href="#List内部排序sort方法" class="headerlink" title="List内部排序sort方法"></a>List内部排序sort方法</h2><p>&#x2F;&#x2F;因为为了兼容jdk8之前版本(那时List中没有内置关于排序的方法)<br>    &#x2F;&#x2F;我们都是使用工具类java.util.Collections里面提供的一系列静态方法<br>    &#x2F;&#x2F;其中就有一个sort的方法，可以对List进行排序,只需把List对象中作为实参传入其中，同时<br>    &#x2F;&#x2F;需要Comparator对象(排序规则)一起参与排序。</p>
+<h2 id="List排序反转的方法如下："><a href="#List排序反转的方法如下：" class="headerlink" title="List排序反转的方法如下："></a>List排序反转的方法如下：</h2><p><img src="/assets/%E5%9B%BE%E7%89%8728.png"></p>
+<h2 id="ArrayList-Vector主要区别为以下几点："><a href="#ArrayList-Vector主要区别为以下几点：" class="headerlink" title="ArrayList,Vector主要区别为以下几点："></a>ArrayList,Vector主要区别为以下几点：</h2><p>（1）同步性：Vector是线程安全的，用synchronized实现线程安全，而ArrayList是线程不安全的，如果只有一个线程会访问到集合，那最好使用ArrayList，因为它不考虑线程安全，效率会高些；如果有多个线程会访问到集合，那最好是使用Vector，因为不需要我们再去考虑和编写线程安全的代码。</p>
+<p>（2）数据容量增长：二者都有一个初始容量大小，采用线性连续存储空间，当存储的元素的个数超过了容量时，就需要增加二者的存储空间，Vector增长原来的一倍，ArrayList增加原来的0.5倍。</p>
+<p><em><strong>简而言之：</strong></em><br>1.ArrayList在内存不够时默认是扩展50% + 1个，Vector是默认扩展1倍。<br>2.Vector提供indexOf(obj, start)接口，ArrayList没有。<br>3.Vector属于线程安全级别的，但是大多数情况下不使用Vector，因为线程安全需要更大的系统开销。</p>
+<h2 id="有关List和Set接口的个人总结"><a href="#有关List和Set接口的个人总结" class="headerlink" title="有关List和Set接口的个人总结"></a>有关List和Set接口的个人总结</h2><p>List接口中ArrayList实现类，最特殊的地方就是有下标，不管是添加还是删除都可以按照下标，十分方便。addAll方法是Collection中的，而List方法的特别之处就是根据下标和接口添加，删除也是。集合中都可以返回数组形式，都可以迭代。Set接口添加不重复不保证添加顺序。如果List想要删除特定的元素就要在前面添加类型，进行强转，而后面会学习到泛型，那时就不需要强转，因为在定义集合时就先定义里面的类型，后面如果不是添加这个类型的数据，系统就会报错。</p>
+<p>双列集合(存放的是键值对)<br><img src="/assets/3.jpg"></p>
+<h2 id="java-int与integer的区别"><a href="#java-int与integer的区别" class="headerlink" title="java int与integer的区别"></a>java int与integer的区别</h2><p>int与integer的区别从大的方面来说就是基本数据类型与其包装类的区别：</p>
+<p>int 是基本类型，直接存数值，而integer是&#x3D;&#x3D;对象&#x3D;&#x3D;，用一个引用指向这个对象</p>
 <p>List中常见实现类有3个分别是<em>ArrayList</em>，<em>Vector</em>，<em>LinkedList</em>。他们之间的区别是什么？<br>ArrayList的内部实现是基于数组，那么ArrayList的优缺点也与数组的优缺点有关，那么ArrayList不擅长插入和删除等操作。</p>
 <p>LinkedList的内部实现是基于链表（双向链表），那么链表的优势在于插入和删除操作特别简单，反而按照所谓的下标查询没有数组来的方便。那么LinkedList擅长于删除和修改操作，对于按照下标查询操作就显得性能不如ArrayList了。</p>
 <p>至于Vector，Vector可以理解成是ArrayList的“双胞胎”，相同的是与ArrayList都是基于数组的实现，不同的是Vector内部的所有方法都加入了同步机制（多线程中的一个技术点），而ArrayList是非同步的。<br>同步加上相比不加同步，效率要低一些。</p>
 <h2 id="3-2-2操作Set以及常用实现类"><a href="#3-2-2操作Set以及常用实现类" class="headerlink" title="3.2.2操作Set以及常用实现类"></a>3.2.2操作Set以及常用实现类</h2><p>Set的特征：<em><strong>不保证添加顺序</strong></em>，<em><strong>元素不能重复</strong></em>，某些实现不能添加null值。<br>操作，几乎可以借鉴List，因为Set与List有共同的“父亲“，Collection<br>但是注意Set中的操作与List不一样的地方就存在是否有下标这个点上面。换句话说之前操作List的时候，但凡涉及到下标的操作，在Set中都不存在。</p>
-<h2 id="instanceof-用法"><a href="#instanceof-用法" class="headerlink" title="instanceof 用法"></a>instanceof 用法</h2><p>首先，java 中的instanceof是一个运算符，而且是二目运算符，即有两个操作数。该运算符是用来在运行时指出对象是否是特定类的一个实例。instanceof通过返回一个布尔值来指出，这个对象是否是这个特定类或者是它的子类的一个实例。<br> 用法：<br>result &#x3D; object instanceof class<br>参数：<br>Result：布尔类型。<br>Object：必选项。任意对象表达式。<br>Class：必选项。任意已定义的对象类。<br>说明：<br>如果 object 是 class 的一个实例，则 instanceof 运算符返回 true。如果 object 不是指定类的一个实例，或者 object 是 null，则返回 false。</p>
+<h2 id="instanceof-用法-运行类型"><a href="#instanceof-用法-运行类型" class="headerlink" title="instanceof 用法(运行类型)"></a>instanceof 用法(运行类型)</h2><p>首先，java 中的instanceof是一个运算符，而且是二目运算符，即有两个操作数。该运算符是用来在运行时指出对象是否是特定类的一个实例。instanceof通过返回一个布尔值来指出，这个对象是否是这个特定类或者是它的子类的一个实例。<br> 用法：<br>result &#x3D; object instanceof class<br>参数：<br>Result：布尔类型。<br>Object：必选项。任意对象表达式。<br>Class：必选项。任意已定义的对象类。<br>说明：<br>如果 object 是 class 的一个实例，则 instanceof 运算符返回 true。如果 object 不是指定类的一个实例，或者 object 是 null，则返回 false。</p>
 <p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/liranke/article/details/5574791">https://blog.csdn.net/liranke/article/details/5574791</a></p>
 <h2 id="3-2-4Set中的元素相同问题"><a href="#3-2-4Set中的元素相同问题" class="headerlink" title="3.2.4Set中的元素相同问题"></a>3.2.4Set中的元素相同问题</h2><p>判断对象之间的hashCode，如果hashCode相同，进一步判断equals比较是否为true，如果为true，那么对象重复了，反之对象不重复。<br>注：int hashCode()  boolean equals(Object)都是Object类中的方法。</p>
 <h2 id="3-2-5Set中的元素排序问题"><a href="#3-2-5Set中的元素排序问题" class="headerlink" title="3.2.5Set中的元素排序问题"></a>3.2.5Set中的元素排序问题</h2><p>排序就是按照某种规则（一般就是字典顺序）对集合中的元素进行排列。所谓的字典顺序就是a-z。<br>带排序功能的 <em>Set（TreeSet）</em> 内部排序规则是按照字典顺序进行升序排列。</p>
@@ -580,7 +621,7 @@
 <h2 id="数组的说明：new就是在堆上开辟，引用都是在栈上。赋值都是赋值栈中的值。"><a href="#数组的说明：new就是在堆上开辟，引用都是在栈上。赋值都是赋值栈中的值。" class="headerlink" title="数组的说明：new就是在堆上开辟，引用都是在栈上。赋值都是赋值栈中的值。"></a>数组的说明：new就是在堆上开辟，引用都是在栈上。赋值都是赋值栈中的值。</h2><p> –数组是引用类型，其真实值存放在堆内存中。如果不指定堆内存的地址，则值为null。int[] arr &#x3D; null;</p>
 <h2 id="集合中任何类内置方法的调用涉及的元素必须是对象类型，这一点与数组不一样。"><a href="#集合中任何类内置方法的调用涉及的元素必须是对象类型，这一点与数组不一样。" class="headerlink" title="集合中任何类内置方法的调用涉及的元素必须是对象类型，这一点与数组不一样。"></a>集合中任何类内置方法的调用涉及的元素必须是对象类型，这一点与数组不一样。</h2><p>基本数据类型    对象类型<br>byte            Byte<br>short            Short<br>int                Integer<br>long            Long<br>float            Float<br>double            Double<br>boolean            Boolean<br>char            Character</p>
 <p>2.集合在使用之前不需要像数组那样先确定长度（元素的数量）</p>
-<h2 id="hashCode-方法"><a href="#hashCode-方法" class="headerlink" title="hashCode() 方法"></a>hashCode() 方法</h2><p>hashCode() 方法用于返回字符串的哈希码。</p>
+<h2 id="hashCode-方法"><a href="#hashCode-方法" class="headerlink" title="hashCode() 方法"></a>hashCode() 方法</h2><p>hashCode() 方法用于返回字符串的哈希码(散列码)。</p>
 <p>若不同，直接加入；若相同，再去调用equals方法，若相同，不加入，否则，加入。</p>
 
                 

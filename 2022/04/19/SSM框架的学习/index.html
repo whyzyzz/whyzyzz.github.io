@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="平时写代码遇到的问题总结, 晚枫">
-    <meta name="description" content="输入输出流和异常处理问题
-break,continuebreak 可以用于switch和循环结构之中，continue只能用于循环结构之中。
-1.用于switch语句中,从中途退出switch语句。2.用于循环语句中,从循环体内直接退出当前">
+    <meta name="keywords" content="SSM框架的学习, 晚枫">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +17,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>平时写代码遇到的问题总结 | 晚枫</title>
+    <title>SSM框架的学习 | 晚枫</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -311,12 +309,12 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">平时写代码遇到的问题总结</h1>
+                    <h1 class="description center-align post-title">SSM框架的学习</h1>
                 </div>
             </div>
         </div>
@@ -444,7 +442,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-28
+                    2022-04-19
                 </div>
                 
 
@@ -468,21 +466,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="输入输出流和异常处理问题"><a href="#输入输出流和异常处理问题" class="headerlink" title="输入输出流和异常处理问题"></a>输入输出流和异常处理问题</h2><p><img src="/assets/%E5%9B%BE%E7%89%8725.png"></p>
-<h2 id="break-continue"><a href="#break-continue" class="headerlink" title="break,continue"></a>break,continue</h2><p>break 可以用于switch和循环结构之中，continue只能用于循环结构之中。</p>
-<p>1.用于switch语句中,从中途退出switch语句。<br>2.用于循环语句中,从循环体内直接退出当前循环。</p>
-<p>break是跳出整个循环，continue是跳出本次循环。</p>
-<h2 id="Integer-parseInt-String强转成整型"><a href="#Integer-parseInt-String强转成整型" class="headerlink" title="Integer.parseInt(String强转成整型)"></a>Integer.parseInt(String强转成整型)</h2><p><img src="/assets/%E5%9B%BE%E7%89%8726.png"></p>
-<h2 id="static为什么一般与final一起用？"><a href="#static为什么一般与final一起用？" class="headerlink" title="static为什么一般与final一起用？"></a>static为什么一般与final一起用？</h2><p>static和final的意义是不同的：<br>static修饰的时候代表对象是静态的，而final修饰的时候代表对象只能赋值一次，<br>他们连用的时候是因为定义的那个对象既要它是静态的，也要求它的值不能再被修改。</p>
-<h2 id="静态方法和非静态方法相互调用"><a href="#静态方法和非静态方法相互调用" class="headerlink" title="静态方法和非静态方法相互调用"></a>静态方法和非静态方法相互调用</h2><p><em><strong>在同一个类中：</strong></em><br>对于静态方法，其他的静态或非静态方法都可以直接调用它。<br>而对于非静态方法，其他的非静态方法是可以直接调用它的。但是其他静态方法只有通过对象才能调用它。静态方法不能被非静态方法覆盖。</p>
-<p><em><strong>不同的类之间：</strong></em><br>无论调用方法是非静态还是静态，如果被调用的方法是：<br>静态方法，则通过类名与对象都可以调（但通过对象的方式不建议使用，因为它属于非静态调用的方式）<br>非静态方法，则只能通过对象才可以调用它</p>
-<h2 id="类后面加不加括号"><a href="#类后面加不加括号" class="headerlink" title="类后面加不加括号"></a>类后面加不加括号</h2><p>调用类时，不加括号。那么这个变量a 或者 b 都将时类本身。<br>而加上括号之后。那么变量b 就是类实例化出的对象。就是继承类的时候，括号里就要填父类名。</p>
-<h2 id="interface：接口"><a href="#interface：接口" class="headerlink" title="interface：接口"></a>interface：接口</h2><h2 id="JAVA中extends-与implements有啥区别？"><a href="#JAVA中extends-与implements有啥区别？" class="headerlink" title="JAVA中extends 与implements有啥区别？"></a>JAVA中extends 与implements有啥区别？</h2><ol>
-<li>在类的声明中，通过关键字extends来创建一个类的子类。一个类通过关键字implements声明自己使用一个或者多个接口。<br>extends 是继承某个类, 继承之后可以使用父类的方法, 也可以重写父类的方法; implements 是实现多个接口, 接口的方法一般为空的, 必须重写才能使用</li>
-</ol>
-<p>2.extends是继承父类，只要那个类不是声明为final或者那个类定义为abstract的就能继承，JAVA中不支持多重继承，但是可以用接口 来实现，这样就要用到implements，继承只能继承一个类，但implements可以实现多个接口，用逗号分开就行了</p>
-<h2 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h2><p>–重载概念：在一个类中，允许函数名相同但参数不同的多个方法。主要为了方便阅读，优化程序设计。<br>–重载规则：<br>•方法的名称相同，方法的参数列表不同（参数的类型，参数的个数不同，参数的顺序不同）。<br>–注意：<br>•形参的名称不同，不能作为重载的标识。<br>•函数的返回值不同，也不能作为重载的标识。<br>–在方法调用时，根据实参的类型，自动匹配调用哪个重载的方法。<br>构造方法也可以重载。<br>•注意：以后所有的实现，一定要通过方法实现。不能直接写在main方法中了。</p>
-
+                
                 
             </div>
             <hr/>
@@ -508,7 +492,7 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://whyzyzz.github.io/2022/03/28/%E5%B9%B3%E6%97%B6%E5%86%99%E4%BB%A3%E7%A0%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/">https://whyzyzz.github.io/2022/03/28/%E5%B9%B3%E6%97%B6%E5%86%99%E4%BB%A3%E7%A0%81%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</a>
+                    <a href="https://whyzyzz.github.io/2022/04/19/SSM%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AD%A6%E4%B9%A0/">https://whyzyzz.github.io/2022/04/19/SSM%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AD%A6%E4%B9%A0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -717,9 +701,48 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/04/19/SSM%E6%A1%86%E6%9E%B6%E7%9A%84%E5%AD%A6%E4%B9%A0/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="SSM框架的学习">
+                        
+                        <span class="card-title">SSM框架的学习</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            最美的丽
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/04/03/%E5%9C%A8b%E7%AB%99%E5%90%AC%E9%9F%A9%E8%80%81%E5%B8%88%E8%AF%BE%E7%9A%84%E5%B0%8F%E7%BB%93/">
                     <div class="card-image">
@@ -737,45 +760,8 @@ break,continuebreak 可以用于switch和循环结构之中，continue只能用�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            最美的丽
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/19/%E7%BA%BF%E7%A8%8B/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="线程">
-                        
-                        <span class="card-title">线程</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
                             </span>
                         <span class="publish-author">
                             
